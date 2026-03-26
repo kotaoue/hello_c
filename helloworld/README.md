@@ -6,24 +6,19 @@ A simple Hello World program in C.
 
 Make sure you have the Xcode Command Line Tools installed, which includes `gcc` (clang).
 
-```bash
+```sh
 xcode-select --install
 ```
 
 ## Build
 
-```bash
+```sh
 gcc hello.c -o hello
 ```
 
 ## Run
 
-```bash
+```sh
 ./hello
-```
-
-You should see:
-
-```
 Hello, World!
 ```
