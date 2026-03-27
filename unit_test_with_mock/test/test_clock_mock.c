@@ -2,9 +2,9 @@
  * test_clock_mock.c
  * CMock を使ったモックテストの例
  *
- * get_greeting() は内部で get_current_hour() を呼び出す。
- * CMock が生成した Mockclock を使って get_current_hour() をモックし、
- * 実際の時刻に依存せずテストする。
+ * get_greeting() は内部で get_current_hour() を呼び出して現在時刻を取得する。
+ * CMock が生成した Mockclock を使って get_current_hour() の戻り値を固定することで、
+ * 実際の時刻に依存しない決定論的なテストを実現する。
  */
 
 #include "unity.h"
